@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>PROJECT2024</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -12,6 +12,23 @@ body {top: 0; left: 0; width: 99%; height: 97%;
 
 }
 </style>
+<script type="text/javascript">
+    // declare time zone formatting
+    let options = {
+        timeZone: 'Indian Standard Time',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    // set time
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
 
 </head>
 <body>
