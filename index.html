@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"/>
-<title>PROJECT2024</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<style>
-body {top: 0; left: 0; width: 99%; height: 97%;
-    position: absolute; display: table}
-  p {display: table-cell; vertical-align: middle; text-align: center}
-#timezone * {text-decoration: none;}
-
-}
-</style>
-<script type="text/javascript">
-    // declare time zone formatting
-    let options = {
-        timeZone: 'Asia/Kolkata',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-    },
-    formatter = new Intl.DateTimeFormat([], options);
-
-    // set time
-    setInterval(
-        () => {
-            document.querySelector("#time").innerText = formatter.format(new Date());
-        }
-    , 1000)
-</script>
-</head>
-<body>
-<p>
-<font size="7"><i><b>Ricky Samuel Devaraj</b></i></font>
-<br>
-<br>
-<img src="https://i.imgur.com/bQe6aac.png" style="width:560px; height:320px;">
-<br>
-<br>
-<span id=timezone>
-<i>
-<a href="https://24timezones.com/Chennai/time">TIME IN CHENNAI</a> - <span
+    <head><meta charset="utf-8"/>
+        <title>PROJECT2024</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <style>
+            body {top: 0; left: 0; width: 99%; height: 97%;
+                  position: absolute; display: table}
+            p {display: table-cell; vertical-align: middle; text-align: center}
+            #timezone * {text-decoration: none;}
+            }
+        </style>
+        <script type="text/javascript">
+            let options = {
+                timeZone: 'Asia/Kolkata',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+            },
+                formatter = new Intl.DateTimeFormat([], options);
+            setInterval(
+                () => {
+                    document.querySelector("#time").innerText = formatter.format(new Date());
+                }
+                , 1000)
+        </script>
+    </head>
+    <body>
+        <p>
+            <font size="7"><i><b>Ricky Samuel Devaraj</b></i></font>
+            <br>
+            <br>
+            <img src="https://i.imgur.com/bQe6aac.png" style="width:560px; height:320px;">
+            <br>
+            <br>
+            <span id=timezone>
+                <i>
+                    <a href="https://24timezones.com/Chennai/time">TIME IN CHENNAI</a> - <span
     id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a>
-</i>
-</span>
-<br><br>
-
-</p>
-</body>
+                </i>
+            </span>
+            <br>
+            <br>
+        </p>
+    </body>
 </html>
